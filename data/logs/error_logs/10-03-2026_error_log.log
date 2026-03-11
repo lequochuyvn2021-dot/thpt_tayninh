@@ -1,0 +1,14 @@
+[Tue, 10 Mar 2026 20:18:58 +0700] [localhost] [::1] [Warning(2): Undefined array key "config"] [FILE: /admin/themes/activatetheme.php] [LINE: 138]
+[Tue, 10 Mar 2026 20:19:57 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[HY000]: General error: 1034 Index for table 'nv4_users_question' is corrupt; try to repair it in D:\xampp\htdocs\thpt_tayninh\vendor\vinades\nukeviet\Core\Database.php:545
+Stack trace:
+#0 D:\xampp\htdocs\thpt_tayninh\vendor\vinades\nukeviet\Core\Database.php(545): PDO->query('SELECT COUNT(*)...', NULL)
+#1 D:\xampp\htdocs\thpt_tayninh\includes\core\dump.php(124): NukeViet\Core\Database->query('SELECT COUNT(*)...')
+#2 D:\xampp\htdocs\thpt_tayninh\includes\cronjobs\dump_autobackup.php(65): nv_dump_save(Array)
+#3 D:\xampp\htdocs\thpt_tayninh\includes\core\cronjobs.php(77): cron_dump_autobackup()
+#4 D:\xampp\htdocs\thpt_tayninh\includes\mainfile.php(381): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\thpt_tayninh\index.php(26): require('D:\\xampp\\htdocs...')
+#6 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 545]
+[Tue, 10 Mar 2026 20:23:15 +0700] [localhost] [::1] [Notice(8): unserialize(): Error at offset 818 of 951 bytes] [FILE: /includes/core/user_functions.php] [LINE: 102]
+[Tue, 10 Mar 2026 21:15:51 +0700] [localhost] [::1] [Warning(2): imagecreatefrompng(): gd-png: libpng warning: iCCP: known incorrect sRGB profile] [FILE: /vendor/vinades/nukeviet/Files/Image.php] [LINE: 215]
+[Tue, 10 Mar 2026 22:47:27 +0700] [localhost] [::1] [User Notice(1024): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Top Menu' for key 'title'] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 131]
