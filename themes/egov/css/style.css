@@ -562,7 +562,6 @@ div.check-box label [type="radio"] {
 }
 
 figure {
-    position: relative;
     padding: 3px;
     display: block;
     float: left;
@@ -788,7 +787,7 @@ a.btn {
     left:0;
     min-width:100%;
     min-height:100%;
-    background: #eeeeee url("../images/bgtrongdong_1.png") top center no-repeat;
+    background: #d6dfd8;
 }
 
 /* Header */
@@ -825,7 +824,7 @@ a.btn {
 
 /* breadcrumb */
 .breadcrumbs-wrap{
-    position: relative;
+    
 }
 
 .breadcrumbs-wrap .display{
@@ -1078,11 +1077,12 @@ a.btn {
 }
 
 #menusite .navbar-default .navbar-nav > li > a {
-    color:#fff !important;
+    color:#ffffff !important;
 }
 
 #menusite .navbar-nav > li > a {
     white-space:nowrap;
+     color: #ffffff;
 }
 
 #menusite .dropdown-menu {
@@ -1107,9 +1107,13 @@ a.btn {
 }
 
 #menusite .dropdown-menu > li > a {
-    color:#333 !important;
+    color:#ffffff !important;
     line-height:30px !important;
     padding:3px 15px !important;
+}
+
+#menu-site-default .navbar-nav > li > a{
+    color: #ffffff !important;
 }
 
 #menusite .navbar-default .navbar-nav > li > a:hover,
@@ -1482,7 +1486,7 @@ a.btn {
 .footerNav2 {
     position:relative;
     width:100%;
-    background-color: #777676;
+    background-color: #005a66;
     padding:10px 0;
     color:#dcdcdc;
 }
@@ -1558,7 +1562,8 @@ a.btn {
 /* Footer */
 
 #footer {
-    background: #d5d5d5 url("../images/bg-footer.png") center top no-repeat;
+    background: #0d7377;
+    color:white;
     position:relative;
     width:100%;
     font-size:13px
@@ -1566,7 +1571,7 @@ a.btn {
 
 #footer,
 #footer a {
-    color:#dcdcdc;
+    color:#ffffff;
 }
 
 #footer h3 {
@@ -1575,7 +1580,7 @@ a.btn {
     letter-spacing:0.5px;
     text-transform:uppercase;
     margin-bottom: 10px;
-    color:#dcdcdc;
+    color: #ffffff;
 }
 
 #footer h3 a {
@@ -2058,7 +2063,6 @@ button.close {
 }
 
 #sitemodal .modal-dialog {
-  position: relative;
   width: auto !important;
   max-width: 600px;
   text-align: center;
@@ -2375,11 +2379,11 @@ button.close {
 }
 
 .color-text-footer {
-    color: #464d66;
+    color: #fff;
 }
 
 .color-text-footer a, .color-text-footer p, .color-text-footer strong, .color-text-footer h3  {
-    color: #464d66;
+    color: #fff;
 }
 
 .fix-superfish-menu a {
@@ -2435,7 +2439,6 @@ button.close {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 }
 .height-hometext {
-    position: relative;
     margin-bottom: 15px;
 }
 .height-hometext:after {
@@ -2483,3 +2486,33 @@ button, html input[type="button"], input[type="reset"], input[type="submit"]{
 .btn-xs {
     color: #fff !important;
 }
+
+/* ===== FIX GIAO DIEN WEBSITE ===== */
+
+/* 1. XOA THANH VANG TREN CUNG */
+.header-nav{
+    display:none !important;
+}
+
+/* 2. BO KHOANG TRONG DO HEADER TAO RA */
+#header{
+    margin-top:0 !important;
+}
+
+/* 3. XOA THANH CAM DUOI BANNER */
+.second-nav .bg{
+    display:none !important;
+}
+
+/* 4. BO VIEN CAM 2 BEN MENU */
+#menusite .navbar-default{
+    border:none !important;
+    box-shadow:none !important;
+}
+
+/* 5. BO HIEU UNG CAM KHI HOVER MENU */
+#menusite .navbar-default .navbar-nav > li > a:hover,
+#menusite .navbar-default .navbar-nav > li > a:focus{
+    background:#0b7dc1 !important;
+}
+

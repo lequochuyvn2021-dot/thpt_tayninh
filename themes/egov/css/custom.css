@@ -46,7 +46,7 @@ a, a:link, a:active, a:visited, #footer a {
 }
 
 .sitemenu-bg {
-    background-color: #ea4800;
+    background-color: transparent;
 }
 
 .newstabhomejcarousel-items .jcarousel-pagination a.active {
@@ -247,23 +247,13 @@ ul.menutop, ul.menutop a, .socialList li a, .user-fix>span>.user, .user-fix>span
     margin-bottom: 5px;
 }
 
-.banner {
-    position: absolute;
-    left: 0;
-    top: 30px;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
+.nv-block-banners{
+    width:100%;
 }
 
-.banner img {
-    object-position: center;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    display: block;
+.banner img{
     max-width: 100%;
-    min-height: 150px;
+    height: auto;
 }
 
 .sitebannertext .sd {
@@ -277,13 +267,12 @@ ul.menutop, ul.menutop a, .socialList li a, .user-fix>span>.user, .user-fix>span
     left: 0;
     height: 40px;
     width: 100%;
-    border: 1px #ef7640 solid;
+    border: 0;
     border-left: 0;
     border-right: 0;
 }
 
-.sitemenu-ct {
-    position: relative;
+.sitemenu-ct{
     width: 100%;
     height: 100%;
 }
@@ -294,12 +283,9 @@ ul.menutop, ul.menutop a, .socialList li a, .user-fix>span>.user, .user-fix>span
     left: 0;
     top: -1px;
     bottom: -1px;
-    margin-right: 540px;
+    margin-right: 0;
     height: 40px;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 1%, rgba(1, 0, 0, 0) 49%, rgba(2, 1, 1, 0.1) 80%, rgba(2, 1, 1, 0.2) 100%);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 1%, rgba(1, 0, 0, 0) 49%, rgba(2, 1, 1, 0.1) 80%, rgba(2, 1, 1, 0.2) 100%);
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(1, 0, 0, 0) 49%, rgba(2, 1, 1, 0.1) 80%, rgba(2, 1, 1, 0.2) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#33020101', GradientType=1);
+    background: none;
 }
 
 .sitemenu-ctr {
@@ -308,14 +294,10 @@ ul.menutop, ul.menutop a, .socialList li a, .user-fix>span>.user, .user-fix>span
     right: 0;
     top: -1px;
     bottom: -1px;
-    margin-left: 540px;
+    margin-left: 0;
     height: 40px;
-    background: -moz-linear-gradient(left, rgba(2, 1, 1, 0.2) 0%, rgba(2, 1, 1, 0.1) 20%, rgba(1, 1, 1, 0) 51%, rgba(0, 0, 0, 0) 99%);
-    background: -webkit-linear-gradient(left, rgba(2, 1, 1, 0.2) 0%, rgba(2, 1, 1, 0.1) 20%, rgba(1, 1, 1, 0) 51%, rgba(0, 0, 0, 0) 99%);
-    background: linear-gradient(to right, rgba(2, 1, 1, 0.2) 0%, rgba(2, 1, 1, 0.1) 20%, rgba(1, 1, 1, 0) 51%, rgba(0, 0, 0, 0) 99%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33020101', endColorstr='#00000000', GradientType=1);
+    background: none;
 }
-
 #menusite .navbar-default {
     border-bottom: 1px #ef7640 solid;
     min-height: 44px;
@@ -383,7 +365,6 @@ ul.menutop, ul.menutop a, .socialList li a, .user-fix>span>.user, .user-fix>span
     height: 53px;
     top: 0;
     left: -12px;
-    background-image: url(../images/menu-left.png);
 }
 
 #menu-site-default .conner-right {
@@ -392,7 +373,6 @@ ul.menutop, ul.menutop a, .socialList li a, .user-fix>span>.user, .user-fix>span
     height: 53px;
     top: 0;
     right: -12px;
-    background-image: url(../images/menu-right.png);
 }
 
 #menu-site-default ul.allowrwap .dropdown-menu>li>a {
@@ -1424,4 +1404,94 @@ div.breadcrumbs-bg {
     .sitemenu-bg, .conner-right, .conner-left {
         display: none;
     }
+}
+
+/* Xóa bỏ mọi padding/margin của header và container bọc banner */
+header, .banner-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+.container-fluid.p-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Đảm bảo ảnh banner dãn hết cỡ và không bị méo */
+.banner-wrapper img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+
+/* --- FIX BANNER VÀ MENU BẰNG NHAU --- */
+
+/* Ép khung wraper và container về một kích chuẩn */
+.wraper.bg-shadow-body, 
+.wraper.bg-shadow-body .container {
+    width: 100% !important;
+    max-width: 1200px !important; /* Độ rộng chuẩn của menu xanh */
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Xóa bỏ các khoảng cách cũ trong file custom.css của bạn */
+#header {
+    margin-top: 0 !important;
+    background-color: transparent !important;
+}
+
+.banner-wrapper {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.banner-wrapper img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+
+/* Menu xanh dính sát vào banner */
+#menusite {
+    margin-top: 0 !important;
+    width: 100% !important;
+}
+
+#menusite .navbar-default {
+    margin-bottom: 0 !important;
+}
+
+/* Ẩn triệt để dải trắng dư thừa */
+.header-nav, .third-nav {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Đảm bảo phần nội dung body bên dưới không bị dính sát lề */
+#body.container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+#footer h3{
+    position: relative;
+    display: block;      /* cho tiêu đề chiếm hết chiều ngang */
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#footer h3::after{
+    content: "";
+    display: block;
+    width: 100%;         /* line dài hết khối */
+    height: 2px;
+    background: #f9c74f;
+    margin: 8px auto 12px;
 }
