@@ -8,3 +8,7 @@ Stack trace:
 #5 D:\xampp\htdocs\thpt_tayninh\index.php(26): require('D:\\xampp\\htdocs...')
 #6 {main}
   thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 545]
+[Wed, 11 Mar 2026 19:23:36 +0700] [localhost] [::1] [Warning(2): simplexml_load_file(): I/O warning : failed to load external entity &quot;D:/xampp/htdocs/thpt_tayninh/themes/nukeviet-egov/config.ini&quot;] [FILE: /admin/themes/main.php] [LINE: 85]
+[Wed, 11 Mar 2026 19:27:37 +0700] [localhost] [::1] [Warning(2): Undefined array key "funcs"] [FILE: /admin/themes/activatetheme.php] [LINE: 144]
+[Wed, 11 Mar 2026 19:27:37 +0700] [localhost] [::1] [Warning(2): Undefined array key "funcs"] [FILE: /admin/themes/activatetheme.php] [LINE: 145]
+[Wed, 11 Mar 2026 19:27:37 +0700] [localhost] [::1] [Warning(2): Undefined array key 1] [FILE: /admin/themes/activatetheme.php] [LINE: 148]
