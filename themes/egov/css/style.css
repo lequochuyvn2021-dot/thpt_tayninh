@@ -1814,7 +1814,7 @@ a.btn {
 
 .nv-block-banners {
     position:relative;
-    margin-bottom:10px;
+    margin-bottom:5px;
     text-align:center;
 }
 
@@ -1823,11 +1823,6 @@ a.btn {
     top:0;
     left:0;
 }
-
-/*.nv-block-banners img {
-    max-width:100% !important;
-    height:auto;
-}*/
 
 .nv-block-rss li {
     border-bottom-width:1px;
@@ -2516,3 +2511,32 @@ button, html input[type="button"], input[type="reset"], input[type="submit"]{
     background:#0b7dc1 !important;
 }
 
+/* 1. Xóa bỏ giới hạn chiều ngang của khung chứa banner */
+header .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+/* 2. Kéo dãn banner-wrapper ra hết cỡ */
+.banner-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+/* 3. Kéo dãn trực tiếp hình ảnh banner */
+.banner-wrapper a img, 
+.banner-wrapper img {
+    width: 100% !important;         /* Kéo dãn ảnh chiếm hết chiều ngang màn hình */
+    height: auto !important;        /* Giữ tỉ lệ để ảnh không bị méo/mập */
+    max-width: none !important;     /* Bỏ mọi giới hạn cũ */
+    display: block !important;
+}
+
+/* 4. Giữ nguyên Menu ở giữa (Nếu menu bị tràn ra theo banner thì dùng đoạn này) */
+#menusite .container {
+    width: 1200px !important;       /* Ép menu quay về độ rộng chuẩn */
+    max-width: 1200px !important;
+    margin: 0 auto !important;      /* Căn giữa menu */
+}

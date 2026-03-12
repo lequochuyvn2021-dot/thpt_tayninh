@@ -1,0 +1,16 @@
+[Thu, 12 Mar 2026 09:32:31 +0700] [localhost] [::1] [User Notice(1024): SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 95]
+[Thu, 12 Mar 2026 09:32:31 +0700] [localhost] [::1] [User Error(256): Sorry! Could not connect to data server] [FILE: /includes/mainfile.php] [LINE: 286]
+[Thu, 12 Mar 2026 10:13:08 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[HY000]: General error: 1034 Index for table 'nv4_users_question' is corrupt; try to repair it in D:\xampp\htdocs\thpt_tayninh\vendor\vinades\nukeviet\Core\Database.php:545
+Stack trace:
+#0 D:\xampp\htdocs\thpt_tayninh\vendor\vinades\nukeviet\Core\Database.php(545): PDO->query('SELECT COUNT(*)...', NULL)
+#1 D:\xampp\htdocs\thpt_tayninh\includes\core\dump.php(124): NukeViet\Core\Database->query('SELECT COUNT(*)...')
+#2 D:\xampp\htdocs\thpt_tayninh\includes\cronjobs\dump_autobackup.php(65): nv_dump_save(Array)
+#3 D:\xampp\htdocs\thpt_tayninh\includes\core\cronjobs.php(77): cron_dump_autobackup()
+#4 D:\xampp\htdocs\thpt_tayninh\includes\mainfile.php(381): require('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\thpt_tayninh\index.php(26): require('D:\\xampp\\htdocs...')
+#6 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 545]
+[Thu, 12 Mar 2026 11:49:55 +0700] [localhost] [::1] [Error(1): Allowed memory size of 536870912 bytes exhausted (tried to allocate 4096 bytes)] [FILE: /modules/menu/admin/rows.php] [LINE: 425]
+[Thu, 12 Mar 2026 18:44:27 +0700] [localhost] [127.0.0.1] [User Notice(1024): SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 95]
+[Thu, 12 Mar 2026 18:44:27 +0700] [localhost] [127.0.0.1] [User Error(256): Sorry! Could not connect to data server] [FILE: /includes/mainfile.php] [LINE: 286]
+[Thu, 12 Mar 2026 19:52:28 +0700] [localhost] [::1] [Warning(2): Undefined array key "langstar"] [FILE: /themes/egov/modules/news/theme.php] [LINE: 760]

@@ -278,7 +278,6 @@ ul.menutop, ul.menutop a, .socialList li a, .user-fix>span>.user, .user-fix>span
 }
 
 .sitemenu-ctl {
-    position: absolute;
     right: 50%;
     left: 0;
     top: -1px;
@@ -311,18 +310,28 @@ ul.menutop, ul.menutop a, .socialList li a, .user-fix>span>.user, .user-fix>span
     background: #b03600 !important;
 }
 
-#menu-site-default>ul>li>a {
+#menu-site-default > ul > li > a {
     line-height: 44px !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 700;
+    padding-left: 18px !important; /* Khoảng cách rộng hơn giúp menu thoáng hơn */
+    padding-right: 18px !important;
+    font-size: 15px !important;
+    text-transform: uppercase !important; /* Viết hoa toàn bộ */
+    font-weight: 700 !important;
     height: 44px;
+    color: #ffffff !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    display: block;
 }
 
+
+
+/* Loại bỏ các lề thừa nếu có từ bootstrap cũ */
+#menu-site-default .navbar-nav {
+    margin: 0 !important;
+    display: flex;
+}
 #menu-site-default>ul>li>a>.caret {
     position: relative;
     top: -2px;
@@ -1495,3 +1504,64 @@ header, .banner-wrapper {
     background: #f9c74f;
     margin: 8px auto 12px;
 }
+
+header .container, #menusite .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Ép chiều ngang banner và menu về đúng 1200px */
+#header-custom .container, 
+#menusite .container {
+    max-width: 1200px !important;
+    width: 1200px !important; /* Con số chính xác để khớp với phần thân */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+/* Đảm bảo ảnh banner luôn lấp đầy khung */
+.banner-wrapper img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* 1. Cho phép thanh menu tràn toàn màn hình */
+#menusite {
+    width: 100% !important;
+    max-width: none !important;
+    background-color: #00695c !important; /* Màu xanh đậm giống mẫu Điện Biên */
+    border-top: 1px solid #ffca28; /* Đường kẻ vàng phía trên banner */
+    margin: 0 !important;
+}
+
+/* 2. Căn giữa nội dung các mục menu bên trong */
+#menusite .container {
+    max-width: 1200px !important; 
+    width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: transparent !important; /* Loại bỏ nền cũ */
+}
+
+/* 3. Chỉnh màu chữ menu trắng và in đậm */
+#menusite ul li a {
+    color: #ffffff !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    display: block;
+}
+
+/* 4. Hiệu ứng khi di chuột vào (Hover) */
+#menusite ul li:hover, #menusite ul li.active {
+    background-color: #004d40 !important; /* Màu xanh tối hơn */
+}
+
+.navbar-nav > li.active > a,
+.navbar-nav > li:hover > a {
+    background: transparent !important;
+    color: #ffffff !important;
+}
+

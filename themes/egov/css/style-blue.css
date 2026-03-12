@@ -14,13 +14,9 @@
     border-bottom: 1px #0083eb solid;
 }
 
-#menu-site-default .conner-left {
-    background-image: url(../images/menu-left-blue.png);
-}
+#menu-site-default .conner-left {}
 
-#menu-site-default .conner-right {
-    background-image: url(../images/menu-right-blue.png);
-}
+#menu-site-default .conner-right {}
 
 #menusite .navbar-default .navbar-nav>li>a:hover, #menusite .navbar-default .navbar-nav>li>a:focus, #menusite .navbar-default .navbar-nav>.active>a, #menusite .navbar-default .navbar-nav>.active>a:hover, #menusite .navbar-default .navbar-nav>.active>a:focus, #menusite .navbar-default .navbar-nav>.open>a, #menusite .navbar-default .navbar-nav>.open>a:hover, #menusite .navbar-default .navbar-nav>.open>a:focus {
     background: linear-gradient(to bottom,#82b2dc 0%,#428BCA 100%) !important;
@@ -35,8 +31,6 @@
 }
 
 .sitemenu-bg {
-   border: 1px #3b7cbe solid; 
-   background-color: #007fe4;
 }
 
 .bg-hot-news-title {
