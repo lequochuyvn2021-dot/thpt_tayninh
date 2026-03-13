@@ -1,6 +1,4 @@
-.header-nav {
-  background-color: #1f9cf8;
-}
+.header-nav {}
 
 .second-nav .bg {
     background: #0083eb;
@@ -14,9 +12,13 @@
     border-bottom: 1px #0083eb solid;
 }
 
-#menu-site-default .conner-left {}
+#menu-site-default .conner-left {
+    background-image: url(../images/menu-left-blue.png);
+}
 
-#menu-site-default .conner-right {}
+#menu-site-default .conner-right {
+    background-image: url(../images/menu-right-blue.png);
+}
 
 #menusite .navbar-default .navbar-nav>li>a:hover, #menusite .navbar-default .navbar-nav>li>a:focus, #menusite .navbar-default .navbar-nav>.active>a, #menusite .navbar-default .navbar-nav>.active>a:hover, #menusite .navbar-default .navbar-nav>.active>a:focus, #menusite .navbar-default .navbar-nav>.open>a, #menusite .navbar-default .navbar-nav>.open>a:hover, #menusite .navbar-default .navbar-nav>.open>a:focus {
     background: linear-gradient(to bottom,#82b2dc 0%,#428BCA 100%) !important;
@@ -30,15 +32,14 @@
     color: #0256f4 !important;
 }
 
-.sitemenu-bg {
-}
+.sitemenu-bg {}
 
 .bg-hot-news-title {
   background: #1f9cf8;
 }
 
 .faqopinion .sendfaq a, .faqopinion a.faqitem span, .box-icon-body .titlebox h2, .panel-primary>.panel-heading, .genpage_cute .pagination li a:hover, .genpage_cute .pagination li.active a, .genpage_cute .pagination li:first-child a:hover, .genpage_cute .pagination li.active:first-child a, .genpage_cute .pagination li:last-child a:hover, .genpage_cute .pagination li.active:last-child a, .sitebtntool ul.maintoolbtns li a, .sitebtntool ul.maintoolbtns .sp1 {
-  background-color: #1f9cf8;
+  background-color:#1fd7f8;
   border-color: #1d9df8;
 }
 .footerNav2 .theme-change a, .footerNav2 .bttop a  {

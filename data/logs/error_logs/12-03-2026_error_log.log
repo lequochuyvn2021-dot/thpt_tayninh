@@ -14,3 +14,14 @@ Stack trace:
 [Thu, 12 Mar 2026 18:44:27 +0700] [localhost] [127.0.0.1] [User Notice(1024): SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 95]
 [Thu, 12 Mar 2026 18:44:27 +0700] [localhost] [127.0.0.1] [User Error(256): Sorry! Could not connect to data server] [FILE: /includes/mainfile.php] [LINE: 286]
 [Thu, 12 Mar 2026 19:52:28 +0700] [localhost] [::1] [Warning(2): Undefined array key "langstar"] [FILE: /themes/egov/modules/news/theme.php] [LINE: 760]
+[Fri, 13 Mar 2026 00:14:43 +0700] [localhost] [127.0.0.1] [Error(1): Uncaught PDOException: SQLSTATE[HY000]: General error: 1034 Index for table 'nv4_users_question' is corrupt; try to repair it in D:\xampp\htdocs\thpt_tayninh\vendor\vinades\nukeviet\Core\Database.php:545
+Stack trace:
+#0 D:\xampp\htdocs\thpt_tayninh\vendor\vinades\nukeviet\Core\Database.php(545): PDO->query('SELECT qid, tit...', NULL)
+#1 D:\xampp\htdocs\thpt_tayninh\modules\users\blocks\global.login.php(287): NukeViet\Core\Database->query('SELECT qid, tit...')
+#2 D:\xampp\htdocs\thpt_tayninh\modules\users\blocks\global.login.php(500): nv_block_login(Array)
+#3 D:\xampp\htdocs\thpt_tayninh\includes\core\user_functions.php(180): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\thpt_tayninh\themes\egov\theme.php(319): nv_blocks_content('<!DOCTYPE html>...')
+#5 D:\xampp\htdocs\thpt_tayninh\modules\news\funcs\main.php(362): nv_site_theme('<div class="new...')
+#6 D:\xampp\htdocs\thpt_tayninh\index.php(345): require('D:\\xampp\\htdocs...')
+#7 {main}
+  thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 545]

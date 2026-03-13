@@ -12,7 +12,7 @@
 
     <div class="wraper bg-shadow-body">
         <header>
-            <div class="container">
+            <div class="container-fluid p-0">
                 <div class="banner-wrapper">
                      <a href="{THEME_SITE_HREF}" title="{SITE_NAME}">
                         <img alt="{SITE_NAME}" src="{SITE_BANNER}" style="width: 100%; display: block;" />
@@ -32,5 +32,7 @@
         </nav>
 
         <section>
-            <div class="containerdissmisshome" id="body">
+            <div class="container dissmisshome" id="body">
                 [THEME_ERROR_INFO]
+            <div>
+        <section>

@@ -21,8 +21,8 @@ h4, .h4 {
 }
 
 .padding-news-tintuc-thongtinkt, .border-bottom-news {
-    border-bottom-color: #c1c1c1;
-    margin-bottom: 20px;
+    border-bottom-color: #ffffff;
+    margin-bottom: 0px;
 }
 
 a, a:link, a:active, a:visited, #footer a {
@@ -1564,4 +1564,3 @@ header .container, #menusite .container {
     background: transparent !important;
     color: #ffffff !important;
 }
-
