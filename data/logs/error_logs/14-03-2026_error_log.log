@@ -11,3 +11,6 @@ Stack trace:
 #6 {main}
   thrown] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 545]
 [Sat, 14 Mar 2026 20:00:44 +0700] [localhost] [::1] [Warning(2): Undefined array key "langstar"] [FILE: /themes/egov/modules/news/theme.php] [LINE: 760]
+[Sat, 14 Mar 2026 21:29:28 +0700] [localhost] [::1] [Warning(2): Undefined array key 152] [FILE: /modules/menu/admin/rows.php] [LINE: 422]
+[Sat, 14 Mar 2026 21:29:28 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type null] [FILE: /modules/menu/admin/rows.php] [LINE: 424]
+[Sat, 14 Mar 2026 21:29:28 +0700] [localhost] [::1] [Warning(2): Trying to access array offset on value of type null] [FILE: /modules/menu/admin/rows.php] [LINE: 427]
