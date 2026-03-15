@@ -26,7 +26,7 @@ h4, .h4 {
 }
 
 a, a:link, a:active, a:visited, #footer a {
-    color: #494949;
+    color: #fff;
 }
 
 #body.dissmisshome .panel-primary .metismenu .sidebar-nav a {
@@ -1443,7 +1443,6 @@ header, .banner-wrapper {
     width: 100% !important;
     max-width: 1200px !important; /* Độ rộng chuẩn của menu xanh */
     margin: 0 auto !important;
-    padding: 0 !important;
     box-shadow: none !important;
 }
 
@@ -1483,11 +1482,8 @@ header, .banner-wrapper {
     padding: 0 !important;
 }
 
-/* Đảm bảo phần nội dung body bên dưới không bị dính sát lề */
-#body.container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-}
+
+#body.container {}
 
 #footer h3{
     position: relative;
@@ -1499,7 +1495,7 @@ header, .banner-wrapper {
 #footer h3::after{
     content: "";
     display: block;
-    width: 100%;         /* line dài hết khối */
+    width: 60%;         /* line dài hết khối */
     height: 2px;
     background: #f9c74f;
     margin: 8px auto 12px;

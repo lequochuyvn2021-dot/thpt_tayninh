@@ -295,12 +295,13 @@ ul.related h4 {
     border: #ccc 1px solid;
     border-bottom: 0px;
     border-radius: 5px 5px 0px 0px;
-    padding: 10px;
+    text-align: center;
 }
 
 .news-catbox-single h2 {
     border-bottom: #42aaca 2px solid;
     padding-bottom: 5px;
+    background:#1fd7f8;
 }
 
 .height-hometext {

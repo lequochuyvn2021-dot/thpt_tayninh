@@ -1561,7 +1561,7 @@ a.btn {
     background: #3c766a; 
     position:relative;
     width:100%;
-    font-size:13px
+    font-size:20px
 }
 
 #footer,
@@ -1571,7 +1571,7 @@ a.btn {
 
 #footer h3 {
     font-weight:700;
-    font-size:15px;
+    font-size:25px;
     letter-spacing:0.5px;
     text-transform:uppercase;
     margin-bottom: 10px;
@@ -1585,6 +1585,7 @@ a.btn {
 #footer p {
     margin:0;
     padding:0;
+    font-size: 20px;
 }
 
 /* Block Footer-Menu */
@@ -2321,19 +2322,13 @@ button.close {
     margin-top: 20px;
 }
 
-.shadow-bg-1 {
-    border-radius: 0px 0px 10px 10px;
-    margin-bottom: 5px;
-}
+.shadow-bg-1 {}
 
 .shadow-bg-2 {
     border-radius: 10px 10px 0px 0px;
 }
 
-.shadow-bg {
-    border-radius: 10px;
-    margin-bottom: 5px;
-}
+.shadow-bg {}
 
 .more-news a {
     color: #f7a41e;
