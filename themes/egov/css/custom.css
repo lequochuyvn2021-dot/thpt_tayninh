@@ -26,7 +26,7 @@ h4, .h4 {
 }
 
 a, a:link, a:active, a:visited, #footer a {
-    color: #fff;
+    color: #494949;
 }
 
 #body.dissmisshome .panel-primary .metismenu .sidebar-nav a {
@@ -1482,8 +1482,9 @@ header, .banner-wrapper {
     padding: 0 !important;
 }
 
-
-#body.container {}
+/* Đảm bảo phần nội dung body bên dưới không bị dính sát lề */
+#body.container {
+}
 
 #footer h3{
     position: relative;
@@ -1495,7 +1496,7 @@ header, .banner-wrapper {
 #footer h3::after{
     content: "";
     display: block;
-    width: 60%;         /* line dài hết khối */
+    width: 60%;       
     height: 2px;
     background: #f9c74f;
     margin: 8px auto 12px;
@@ -1560,3 +1561,4 @@ header .container, #menusite .container {
     background: transparent !important;
     color: #ffffff !important;
 }
+

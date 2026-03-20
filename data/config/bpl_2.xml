@@ -8,20 +8,37 @@
   <height>800</height>
   <banners>
     <banners_item>
-      <id>2</id>
-      <title>Left-column advertisement</title>
+      <id>3</id>
+      <title>fanpage</title>
       <clid>1</clid>
-      <file_name>vinades.jpg</file_name>
+      <file_name>anh-chup-man-hinh-2026-03-18-204756.png</file_name>
       <imageforswf></imageforswf>
-      <file_ext>jpg</file_ext>
-      <file_mime>image/jpeg</file_mime>
-      <file_width>212</file_width>
-      <file_height>400</file_height>
-      <file_alt></file_alt>
-      <file_click>https://vinades.vn</file_click>
+      <file_ext>png</file_ext>
+      <file_mime>image/png</file_mime>
+      <file_width>1396</file_width>
+      <file_height>778</file_height>
+      <file_alt>Fanpage chính thức của trường THPT Tây Ninh</file_alt>
+      <file_click>https://www.facebook.com/p/Tr%C6%B0%E1%BB%9Dng-THPT-T%C3%82Y-NINH-100072392413520/?locale=vi_VN</file_click>
       <target>_blank</target>
-      <bannerhtml></bannerhtml>
-      <publ_time>1620048540</publ_time>
+      <bannerhtml>&lt;p&gt;Fanpage chính thức của trường THPT Tây Ninh&lt;/p&gt;</bannerhtml>
+      <publ_time>1773840000</publ_time>
+      <exp_time>0</exp_time>
+    </banners_item>
+    <banners_item>
+      <id>4</id>
+      <title>Đoàn trường THPT Tây Ninh</title>
+      <clid>1</clid>
+      <file_name>anh-chup-man-hinh-2026-03-18-204206.png</file_name>
+      <imageforswf></imageforswf>
+      <file_ext>png</file_ext>
+      <file_mime>image/png</file_mime>
+      <file_width>1354</file_width>
+      <file_height>778</file_height>
+      <file_alt>Fanpage chính thức của Đoàn trường THPT Tây Ninh</file_alt>
+      <file_click>https://www.facebook.com/doantruongTayNinh/?locale=vi_VN</file_click>
+      <target>_blank</target>
+      <bannerhtml>&lt;p&gt;Fanpage chính thức của Đoàn trường THPT Tây Ninh&lt;/p&gt;</bannerhtml>
+      <publ_time>1773841440</publ_time>
       <exp_time>0</exp_time>
     </banners_item>
   </banners>
